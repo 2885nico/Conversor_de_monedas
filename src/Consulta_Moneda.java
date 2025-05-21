@@ -4,7 +4,7 @@ public class Consulta_Moneda {
                         string monedaConversion,
                         double cantidad){
 
-        URI direccion = URI.create("GET https://v6.exchangerate-api.com/v6/d92a84a0a9992205170ada26/pair/"+moneda+"/"+monedaConversion+"/"+cantidad);
+        URI direccion = URI.create("GET https://v6.exchangerate-api.com/v6/aqui-va-tu-api/pair/"+moneda+"/"+monedaConversion+"/"+cantidad);
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
